@@ -33,6 +33,9 @@ main :: proc() {
 //initialise glfw
     glfw.Init()
     defer glfw.Terminate()
+
+    glfw.WindowHint(glfw.RESIZABLE, glfw.TRUE)
+    glfw.WindowHint(glfw.OPENGL_FORWARD_COMPAT, glfw.TRUE)
     glfw.WindowHint(glfw.CONTEXT_VERSION_MAJOR, GL_VERSION_MAJOR)
     glfw.WindowHint(glfw.CONTEXT_VERSION_MINOR, GL_VERSION_MINOR)
     glfw.WindowHint(glfw.OPENGL_PROFILE,glfw.OPENGL_CORE_PROFILE)
