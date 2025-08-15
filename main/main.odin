@@ -10,7 +10,7 @@ import gl "vendor:OpenGL"
 	WINDOW_HEIGHT :: 480
 
     GL_VERSION_MAJOR :: 4
-    GL_VERSION_MINOR :: 6
+    GL_VERSION_MINOR :: 1
 
 //shader source
     vertex_source :cstring =`#version 330 core
